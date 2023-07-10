@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Candy Website</title>
+  <link rel="icon" href="IMG_20230601_180725.jpg" >
+  <link rel="stylesheet" href="index.css">
+  <style>
+    /* CSS styles for the navigation bar */
+    .navbar {
+      background-color: #ffcdd5;
+      display: flex;
+      align-items: left;
+      padding: 10px;
+      border-radius: 10px;
+        width:auto;
+    }
+    
+    .navbar a {
+      color: #c88be4;
+      text-decoration: none;
+      font-size: 20px;
+      padding: 20px 20px;
+      margin: 0 10px;
+      border-radius: 50px;
+      transition: background-color 0.3s ease;
+      
+    }
+    
+    .navbar a:hover {
+      background-color: #FFF;
+      color: rgb(228, 115, 152);
+    }
+    
+    .navbar a.active {
+      background-color: #FFF;
+      color: rgb(223, 130, 161);
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-right: auto;
+    }
+    
+    .logo img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    
+    .logo span {
+      font-size: 35px;
+      word-spacing: 2px;
+      letter-spacing: 5px;
+      font-weight: bold;
+      color: #db4f7e;
+    }
+    
+    .search-bar {
+      display: flex;
+      align-items: center;
+    }
+    
+    .search-bar input[type="text"] {
+      padding: 8px;
+      border-radius: 20px;
+      border: none;
+      font-size: 16px;
+    }
+    
+    .search-bar input[type="submit"] {
+      padding: 8px 15px;
+      margin-left: 10px;
+      border-radius: 20px;
+      background-color: #FFF;
+      color:rgb(223, 130, 161);
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <img src="logo.jpg" alt="Logo">
+      <span>  Candy  Company</span>
+    </div>
+    <a class="active" href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Products</a>
+    <a href="#">Contact</a>
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <input type="submit" value="Search">
+      </div>
+  </div>
+  <br>
+  
+  <h1 style="text-align: center;color: rgb(219, 45, 103);">Welcome to the Candy Company</h1>
+  <p style="text-align: center;color: rgb(219, 45, 103);">Discover a world of sweet delights</p>
+  <div class="image-container">
+    <img src="candy iamge 12.jpg" alt="Image 1" class="image" id="image">
+
+    <div class="button-container">
+      <button onclick="previousImage()">&lt; </button>
+      <button onclick="nextImage()">&gt;</button>
+    </div>
+  </div>
+  <br>
+  <h1 style="text-align: center;color: rgb(219, 45, 103);text-decoration: underline;">Best Candies For You</h1>
+  <br>
+<main>
+  <div class="candy">
+    <a href="#"><img src="images 2.jfif" alt="Candy 1" height="150px" width="250px"></a>
+    <a href="#" style="text-decoration: none;color: black;"><h2>Heart Candy</h2></a>
+    <p style="color: rgb(39, 13, 56);">This is a delicious candy with a sweet taste.</p>
+  </div>
+  <div class="candy">
+    <img src="images 3.jfif" alt="Candy 2" height="150px" width="250px">
+    <h2>Round candy</h2>
+    <p style="color: rgb(39, 13, 56);">Try this amazing candy for a burst of flavors.</p>
+  </div>
+  <div class="candy">
+    <img src="images 5.jfif" alt="Candy 3" height="150px" width="250px">
+    <h2>Fruit Candy</h2>
+    <p>Life is uncertain. Eat dessert first </p>
+  </div>
+ 
+
+
+
+  <div class="candy">
+      <img src="OIP.jpg" alt="Candy 4" height="150px" width="250px">
+      <h2>Lolipop Candy</h2>
+      <p>Candy is the perfect food when you're feeling emotional</p>
+    </div><div class="candy">
+      <img src="images.jfif" alt="Candy 5" height="150px" width="250px">
+      <h2>Mixed Fruit Candy</h2>
+      <p>Candy is the most amazing thing in the world</p>
+    </div>
+    <div class="candy">
+      <img src="images 8.jfif" alt="Candy 6" height="150px" width="250px">
+      <h2>Beans Candy</h2>
+      <p>Candy is the answer. Who cares what the question is</p>
+    </div>
+
+
+  <div class="candy">
+      <img src="images 7.jfif" alt="Candy 7" height="150px" width="250px">
+      <h2>Mixed beans Candy</h2>
+      <p>Candy is like a good friend, always there to make you smile.</p>
+    </div><div class="candy">
+      <img src="images 9.jpg" alt="Candy 8" height="150px" width="250px">
+      <h2>Pass Pass Candy</h2>
+      <p>Candy is the sweetest way to make any day better.</p>
+    </div>
+    <div class="candy">
+      <img src="image 4.jpg" alt="Candy 9" height="150px" width="250px">
+      <h2>Love Candy</h2>
+      <p>Heart Candy is useful for expressing your love feelings </p>
+    </div>
+
+
+    <div class="candy">
+      <img src="candy image9.jpg" alt="Candy 10" height="150px" width="250px">
+      <h2> Heart Jelly</h2>
+      <p>Candy is the magical ingredient that turns a bad day into a good one</p>
+    </div><div class="candy">
+      <img src="candy image1.jpg" alt="Candy 11" height="150px" width="250px">
+      <h2>Joy Lolipop Candy</h2>
+      <p>Candy is the key to unlocking a world of sweetness and joy.</p>
+    </div>
+    <div class="candy">
+      <img src="candy image 11.jpg" alt="Candy 12" height="150px" width="250px">
+      <h2>Choclate Candy</h2>
+      <p>Candy is a little happiness in every bite</p>
+    </div>
+
+    <div class="candy">
+      <img src="candy image 9.jpg" alt="Candy 13" height="150px" width="250px">
+      <h2> Amla Candy</h2>
+      <p>Getting a sugar rush, one candy at a time</p>
+    </div><div class="candy">
+      <img src="candy image 8.jpg" alt="Candy 14" height="150px" width="250px">
+      <h2>Sweet Candy</h2>
+      <p>Candy is my sweet escape from reality.</p>
+    </div>
+    <div class="candy">
+      <img src="candy image 7.jpg" alt="Candy 15" height="150px" width="250px">
+      <h2>Crystal Lolipop Candy</h2>
+      <p>Candy reminds us to find joy in the little things</p>
+    </div>
+
+    <div class="candy">
+      <img src="candy image 6.jpg" alt="Candy 16" height="150px" width="250px">
+      <h2> Fruit Jelly</h2>
+      <p>Embracing the nostalgia and comfort that candy brings</p>
+    </div><div class="candy">
+      <img src="candy image 5.jpg" alt="Candy 17" height="150px" width="250px">
+      <h2>Red Heart Candy</h2>
+      <p>Candy spreads the love everywhere</p>
+    </div>
+    <div class="candy">
+      <img src="candy image 4.jpg" alt="Candy 18" height="150px" width="250px">
+      <h2>Sparkle Loplipop</h2>
+      <p>Candy is a little happiness in every bite</p>
+    </div>
+</main>
+<div class="footer">
+   &copy; 2023 Candy Company. All rights reserved. | Website by Candy Comapny |
+</div>
+<script>
+  var imageElement = document.getElementById("image");
+  var images = ["candy image 5.jpg", "candy image 4.jpg", "candy image 2.jpg","candy image 6.jpg","candy image 7.jpg","OIP.jpg"]; // Add image URLs here
+  var currentIndex = 0;
+
+  function changeImage() {
+    imageElement.src = images[currentIndex];
+  }
+
+  function previousImage() {
+    currentIndex--;
+    if (currentIndex < 0) {
+      currentIndex = images.length - 1;
+    }
+    changeImage();
+  }
+
+  function nextImage() {
+    currentIndex++;
+    if (currentIndex >= images.length) {
+      currentIndex = 0;
+    }
+    changeImage();
+  }
+
+  setInterval(nextImage,3000); // Change image every 5 seconds (5000 milliseconds)
+</script>
+</body>
+</html>
